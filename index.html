@@ -1,40 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/styles.css" />
     <title>Weather App</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1 id = 'testing'>Weather Dashboard</h1>
-        <input id = 'searchBar'>
-        <button id = 'searchButton'>Search</button>
+      <h1>Weather Dashboard</h1>
+      <input id="searchBar" />
+      <button id="searchButton">Search</button>
     </header>
 
     <main>
-        <section id = 'currentWeatherCard'>
+      <div id="searchHistory"></div>
+      <h3 class="text-white m-3" id="currentTitle"></h3>
+      <section id="currentWeatherCard"></section>
 
-        </section>
-
-        <section id = 'forecastCards'>
-
-        </section>
-
+      <h3 class="text-white m-3" id="forecastTitle"></h3>
+      <section id="forecastCards"></section>
     </main>
 
-
-
-
-
-
-
-
-
-    <script src ="assets/script.js"></script>
+    <script src="assets/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
-</body>
+  </body>
 </html>
