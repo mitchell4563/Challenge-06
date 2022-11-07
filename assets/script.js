@@ -11,7 +11,8 @@ function main() {
 }
 function getWeather() {
   let cityName = document.getElementById("searchBar").value;
-  document.getElementById("currentTitle").innerHTML = "Current Weather in " + cityName;
+  document.getElementById("currentTitle").innerHTML =
+    "Current Weather in " + cityName;
   document.getElementById("forecastTitle").innerHTML = "5 Day Forecast";
   fetch(
     "https://api.openweathermap.org/geo/1.0/direct?q=" +
@@ -136,7 +137,7 @@ function addToHistory() {
       // returns only 5 items from local storage
       if (i === localStorage.index - 5) {
         break;
-      } else { 
+      } else {
         var searchHistoryItem = localStorage[i];
         // creates html and styling
         var lineItem = document.createElement("button");
