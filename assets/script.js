@@ -162,7 +162,7 @@ setInterval(() => {
   allHistoryButtons.forEach(function (button) {
     button.addEventListener("click", function () {
       document.getElementById("searchBar").value = this.innerText;
-      document.getElementById("searchButton").click();
+      getWeather()
     });
   });
 }, 1000);
