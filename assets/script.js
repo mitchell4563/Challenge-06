@@ -132,7 +132,7 @@ function addToHistory() {
   // interval to check if new item in localstorage
   setInterval(function () {
     historyContainer.innerText = "";
-    // history handler using localstorage. uses previous incrememnted index stored in localstorage
+    // history handler using localstorage. uses previous incremented index stored in localstorage
     for (var i = localStorage.index; i > 0; i--) {
       // returns only 5 items from local storage
       if (i === localStorage.index - 5) {
@@ -152,7 +152,7 @@ function addToHistory() {
         lineItem.innerText = searchHistoryItem;
       }
     }
-  }, 3000);
+  }, 1000);
 }
 
 // interval to add event listeners to history buttons and any newly added history buttons
